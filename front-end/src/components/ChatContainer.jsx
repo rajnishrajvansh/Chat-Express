@@ -45,9 +45,9 @@ const ChatContainer = () => {
     <div>
       {user ? (<>
         <div className="home">
-        <h1  style={{textAlign:"center", fontFamily:"sans-serif", color:"#075e54"}}>Chat Express</h1>
+        <h1>Chat Express</h1>
           <div className="chats_header">
-            <h4 style={{fontFamily:"sans-serif", fontSize:"1.5em", color:"green"}}>Username: {user}</h4>
+            <h4 style={{fontFamily:"sans-serif", fontSize:"1.5em", color:"green"}}>Welcome, {user}</h4>
             
             <button className="chats_logout" onClick={Logout}>
               <strong>Logout</strong>

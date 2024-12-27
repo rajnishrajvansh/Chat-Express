@@ -5,9 +5,17 @@
 }
 /* App  */
 .App {
-    background-color: #7aae9ec5;
     height: 100vh;
     padding: 20px;
+    background-image: url('./assets/back1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* backface-visibility: initial; */
+    text-align: center;
+    color: #075e54;
+    font-family: sans-serif;
+   
 }
 
 /* Login  */
@@ -86,6 +94,7 @@
 
 .home {
     padding: 0 10%;
+  
 }
 /* chats list  */
 .chats_list {
