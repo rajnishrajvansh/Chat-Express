@@ -5,8 +5,8 @@
 }
 /* App  */
 .App {
-    background-color: #ece5dd;
-    max-height: 100%;
+    background-color: #7aae9ec5;
+    height: 100vh;
     padding: 20px;
 }
 
@@ -17,6 +17,10 @@
     align-items: center;
     justify-content: center;
     margin: 10px;
+    background-color: #075e54;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
 }
 
 .login_icon {
@@ -27,23 +31,27 @@
 
 .login_form {
     display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-direction: column;
+   
+
 }
 
 .login_form input {
-    margin: 10;
+    /* margin: 10; */
     height: 50px;
-    width: 25%;
+    /* width: 25%; */
     border-radius: 10px;
     border-width: 5px;
     border-color: rgb(4, 170, 170);
     font-size: 15px;
     padding-inline: 10px;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .login_form button {
-    width: 10%;
+    width: 30%;
     height: 50px;
     font-weight: bold;
     border-radius: 10px;
@@ -51,7 +59,8 @@
     background-color: #075e54;
     border-width: 0;
     color: #fff;
-    margin: 10px,
+    cursor: pointer;
+    /* margin: 10px 10px, */
 }
 
 /* Chat Container  */
@@ -66,7 +75,12 @@
 }
 
 .chats_logout {
-    color: rgb(6, 152, 152);
+    color: rgb(247, 248, 248);
+    background-color: #075e54;
+    padding: 1em;
+    border-radius: 5px;
+    font-family: sans-serif;
+    cursor: pointer;
 }
 
 
@@ -140,4 +154,10 @@
     border-width: 0;
     padding: 10px;
     font-size: 18px,
+}
+.user_login_page{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
 }

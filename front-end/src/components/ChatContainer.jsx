@@ -5,6 +5,7 @@ import InputText from "./InputText";
 import UserLogin from "./UserLogin";
 import socketIOClient from "socket.io-client";
 
+
 const ChatContainer = () => {
   const [user, setUser] = useState(localStorage.getItem("user"));
   const socketio = socketIOClient("http://localhost:3002");
@@ -42,20 +43,20 @@ const ChatContainer = () => {
 
   return (
     <div>
-      {user ? (
+      {user ? (<>
         <div className="home">
+        <h1  style={{textAlign:"center", fontFamily:"sans-serif", color:"#075e54"}}>Chat Express</h1>
           <div className="chats_header">
-            <h4>Username: {user}</h4>
-            <p>
-              <FaYoutube className="chats_icon" /> Code With Yousaf
-            </p>
-            <p className="chats_logout" onClick={Logout}>
+            <h4 style={{fontFamily:"sans-serif", fontSize:"1.5em", color:"green"}}>Username: {user}</h4>
+            
+            <button className="chats_logout" onClick={Logout}>
               <strong>Logout</strong>
-            </p>
+            </button>
           </div>
           <ChatLists chats={chats} />
           <InputText addMessage={addMessage} />
         </div>
+        </>
       ) : (
         <UserLogin setUser={setUser} />
       )}
